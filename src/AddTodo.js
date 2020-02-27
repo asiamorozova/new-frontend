@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 
-export default class AddTodo extends Componet {
+export default class AddTodo extends Component {
   render() {
     return (
+      <>
       <div>
         <input value={this.props.todoInput} onChange={this.props.handleInput} />
-        <button onCLick={this.props.handleClick}>Add task</button>
+        <button onClick={this.props.handleClick}>Add task</button>
       </div>
+      </>
     );
   }
 }
